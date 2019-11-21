@@ -1,7 +1,7 @@
 {
-  "name": "@absolunet/extension",
-  "version": "0.1.0",
-  "description": "IoC extension",
+  "name": "@absolunet/ioc-extension",
+  "version": "1.0.0-beta.3",
+  "description": "The perfect IoC framework extension for Node.js lovers",
   "definition": "",
   "homepage": "https://github.com/absolunet/node-ioc-extension",
   "author": {
@@ -10,7 +10,13 @@
   },
   "keywords": [
     "node",
-    "absolunet"
+    "absolunet",
+    "ioc",
+    "solid",
+    "container",
+    "di",
+    "framework",
+    "extension"
   ],
   "license": "MIT",
   "repository": {
@@ -21,21 +27,33 @@
     "url": "https://github.com/absolunet/node-ioc-extension/issues"
   },
   "engines": {
-    "node": ">= 11.10.0"
+    "node": ">= 12.0.0"
   },
-  "main": "index.js",
+  "main": "dist/node/index.js",
   "scripts": {
-    "test": "npm run test:lint && npm run test:unit",
-    "test:lint": "ava test/lint",
-    "test:unit": "jest test/unit"
+    "test": "node test --scope=all",
+    "test:standards": "node test --scope=standards",
+    "test:unit": "node test --scope=unit",
+    "test:feature": "node test --scope=feature",
+    "test:integration": "node test --scope=integration",
+    "test:endtoend": "node test --scope=endtoend",
+    "manager:install": "node manager --task=install",
+    "manager:outdated": "node manager --task=outdated",
+    "manager:build": "node manager --task=build",
+    "manager:watch": "node manager --task=watch",
+    "manager:documentation": "node manager --task=documentation",
+    "manager:prepare": "node manager --task=prepare",
+    "manager:rebuild": "node manager --task=rebuild",
+    "manager:publish": "node manager --task=publish",
+    "manager:publish:unsafe": "node manager --task=publish:unsafe"
   },
   "devDependencies": {
-    "@absolunet/ioc": "file:../node-ioc",
-    "@absolunet/tester": "2.5.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
-    "jest": "24.1.0"
+    "@absolunet/ioc": "1.0.0-beta.3",
+    "@absolunet/manager": "2.0.0",
+    "@absolunet/tester": "3.0.5",
+    "jest": "24.9.0"
   },
   "peerDependencies": {
-    "@absolunet/ioc": "file:../node-ioc"
+    "@absolunet/ioc": "1.0.0-beta.3"
   }
 }
