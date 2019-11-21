@@ -23,6 +23,16 @@ class ExtensionServiceProvider extends ServiceProvider {
 		// this.loadConfig(this.app.formatPath(__dirname, 'config'));
 		// or even load them and mark them as publishable through
 		// this.loadAndPublishConfig(this.app.formatPath(__dirname, 'config'));
+		//
+		// To publish files, you can do a manual publish through
+		// this.publish({ [this.app.formatPath(__dirname, 'file.ext')]: this.app.basePath('file.ext') });
+		// or you can use utility methods:
+		//
+		// this.publishAssets(this.app.formatPath(__dirname, 'resources', 'static'));
+		// this.publishConfig(this.app.formatPath(__dirname, 'config'));
+		// this.publishMigrations(this.app.formatPath(__dirname, 'database', 'migrations'));
+		// this.publishTranslations(this.app.formatPath(__dirname, 'resources', 'lang'));
+		// this.publishViews(this.app.formatPath(__dirname, 'resources', 'views'));
 	}
 
 	/**
