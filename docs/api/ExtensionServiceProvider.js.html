@@ -43,13 +43,13 @@
 	
 
 	<header>
-		<p class="package"><a href="../">@absolunet/ioc-extension</a><span class="version">1.0.0-beta.1</span></p>
+		<p class="package"><a href="../">@absolunet/ioc-extension</a><span class="version">1.0.0-beta.3</span></p>
 		<a href="https://github.com/absolunet/node-ioc-extension" class="github" data-external="external">View on GitHub</a>
 	</header>
 
 	<div class="container">
 		<nav><div>
-			<h2><a href="index.html">API Home</a></h2><h3>Classes</h3><ul><li><a href="ExtensionServiceProvider.html">ExtensionServiceProvider</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="ExtensionServiceProvider.html#register">register</a></li><li data-type='method'><a href="ExtensionServiceProvider.html#boot">boot</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'></ul></li><li><a href="ExtensionController.html">ExtensionController</a><ul class='members'></ul></li></ul>
+			<h2><a href="index.html">API Home</a></h2><h3>Classes</h3><ul><li><a href="ExtensionServiceProvider.html">ExtensionServiceProvider</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="ExtensionServiceProvider.html#register">register</a></li><li data-type='method'><a href="ExtensionServiceProvider.html#boot">boot</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'></ul></li></ul>
 		</div></nav>
 
 		<div id="main">
@@ -89,6 +89,16 @@ class ExtensionServiceProvider extends ServiceProvider {
 		// this.loadConfig(this.app.formatPath(__dirname, 'config'));
 		// or even load them and mark them as publishable through
 		// this.loadAndPublishConfig(this.app.formatPath(__dirname, 'config'));
+		//
+		// To publish files, you can do a manual publish through
+		// this.publish({ [this.app.formatPath(__dirname, 'file.ext')]: this.app.basePath('file.ext') });
+		// or you can use utility methods:
+		//
+		// this.publishAssets(this.app.formatPath(__dirname, 'resources', 'static'));
+		// this.publishConfig(this.app.formatPath(__dirname, 'config'));
+		// this.publishMigrations(this.app.formatPath(__dirname, 'database', 'migrations'));
+		// this.publishTranslations(this.app.formatPath(__dirname, 'resources', 'lang'));
+		// this.publishViews(this.app.formatPath(__dirname, 'resources', 'views'));
 	}
 
 	/**
