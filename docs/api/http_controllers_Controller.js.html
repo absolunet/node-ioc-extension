@@ -37,19 +37,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
 	
-	<!-- @absolunet/manager@2.0.0 (c) 2011-2019 Absolunet -->
+	<!-- @absolunet/manager@2.1.0 (c) 2011-2020 Absolunet -->
 </head>
 <body>
 	
 
 	<header>
-		<p class="package"><a href="../">@absolunet/ioc-extension</a><span class="version">1.0.0-rc.2</span></p>
+		<p class="package"><a href="../">@absolunet/ioc-extension</a><span class="version">2.0.0</span></p>
 		<a href="https://github.com/absolunet/node-ioc-extension" class="github" data-external="external">View on GitHub</a>
 	</header>
 
 	<div class="container">
 		<nav><div>
-			<h2><a href="index.html">API Home</a></h2><h3>Classes</h3><ul><li><a href="ExtensionServiceProvider.html">ExtensionServiceProvider</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="ExtensionServiceProvider.html#register">register</a></li><li data-type='method'><a href="ExtensionServiceProvider.html#boot">boot</a></li></ul></li><li><a href="Controller.html">Controller</a><ul class='members'></ul></li></ul>
+			<h2><a href="index.html">API Home</a></h2><h3>Classes</h3><ul><li><a href="ExtensionServiceProvider.html">ExtensionServiceProvider</a><ul class='members'></ul><ul class='methods'><li data-type='method'><a href="ExtensionServiceProvider.html#register">register</a></li><li data-type='method'><a href="ExtensionServiceProvider.html#boot">boot</a></li></ul></li><li><a href="http.controllers.Controller.html">Controller</a><ul class='members'></ul></li></ul>
 		</div></nav>
 
 		<div id="main">
@@ -74,6 +74,9 @@ import { Controller as BaseController }  from '@absolunet/ioc';
 /**
  * Base extension controller.
  *
+ * @memberof http.controllers
+ * @augments ioc.http.Controller
+ * @hideconstructor
  * @abstract
  */
 class Controller extends BaseController {
@@ -93,7 +96,7 @@ export default Controller;
 	</div>
 
 	<footer>
-		MIT © 2011-2019 <span class="made">Made with <span class="adjective" data-component="adjective">&#x2764;</span> by <a href="https://absolunet.com" data-external="external">Absolunet</a></span>
+		MIT © 2011-2020 <span class="made">Made with <span class="adjective" data-component="adjective">&#x2764;</span> by <a href="https://absolunet.com" data-external="external">Absolunet</a></span>
 	</footer>
 
 	<script src="../assets__/main.js"></script>

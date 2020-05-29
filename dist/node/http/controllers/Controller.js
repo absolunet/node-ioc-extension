@@ -1,5 +1,8 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = void 0;
 
 var _ioc = require("@absolunet/ioc");
@@ -11,6 +14,9 @@ var _ioc = require("@absolunet/ioc");
 /**
  * Base extension controller.
  *
+ * @memberof http.controllers
+ * @augments ioc.http.Controller
+ * @hideconstructor
  * @abstract
  */
 class Controller extends _ioc.Controller {}

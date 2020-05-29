@@ -7,10 +7,15 @@ import { ServiceProvider } from '@absolunet/ioc';
 
 /**
  * Extension service provider.
+ *
+ * @augments ioc/foundation/ServiceProvider
+ * @hideconstructor
  */
 class ExtensionServiceProvider extends ServiceProvider {
 
 	/**
+	 * Register the service provider.
+	 *
 	 * @inheritdoc
 	 */
 	register() {
@@ -36,6 +41,8 @@ class ExtensionServiceProvider extends ServiceProvider {
 	}
 
 	/**
+	 * Boot the service provider.
+	 *
 	 * @inheritdoc
 	 */
 	boot() {

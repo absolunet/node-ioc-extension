@@ -1,5 +1,8 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = void 0;
 
 var _ioc = require("@absolunet/ioc");
@@ -10,9 +13,14 @@ var _ioc = require("@absolunet/ioc");
 
 /**
  * Extension service provider.
+ *
+ * @augments ioc/foundation/ServiceProvider
+ * @hideconstructor
  */
 class ExtensionServiceProvider extends _ioc.ServiceProvider {
   /**
+   * Register the service provider.
+   *
    * @inheritdoc
    */
   register() {} // You may register any service either as a binding or a singleton using
@@ -36,6 +44,8 @@ class ExtensionServiceProvider extends _ioc.ServiceProvider {
   // this.publishViews(this.app.formatPath(__dirname, 'resources', 'views'));
 
   /**
+   * Boot the service provider.
+   *
    * @inheritdoc
    */
 
