@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [2.1.0] - 2020-11-26
+
+### Changed
+ - Updated framework to `2.1.0`
+
+
+
 ## [2.0.0] - 2020-05-29
 
 ### Added
@@ -49,7 +56,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/2.0.0...HEAD
+[Unreleased]:    https://github.com/absolunet/node-ioc-app/compare/2.1.0...HEAD
+[2.1.0]:         https://github.com/absolunet/node-ioc-app/compare/2.0.0...2.1.0
 [2.0.0]:         https://github.com/absolunet/node-ioc-app/compare/1.0.0-rc-2...2.0.0
 [1.0.0-rc.2]:    https://github.com/absolunet/node-ioc-app/compare/1.0.0-beta.3...1.0.0-rc.2
 [1.0.0-beta.3]:  https://github.com/absolunet/node-ioc-app/compare/0.1.0...1.0.0-beta.3
