@@ -1,6 +1,6 @@
 {
   "name": "@absolunet/ioc-extension",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "The perfect IoC framework extension for Node.js lovers",
   "definition": "",
   "homepage": "https://github.com/absolunet/node-ioc-extension",
@@ -50,12 +50,12 @@
     "manager:publish:unsafe": "node manager --task=publish:unsafe"
   },
   "devDependencies": {
-    "@absolunet/ioc": "~2.0.0",
+    "@absolunet/ioc": "~2.1.0",
     "@absolunet/manager": "2.1.0",
     "@absolunet/tester": "3.2.2",
     "jest": "24.9.0"
   },
   "peerDependencies": {
-    "@absolunet/ioc": "~2.0.0"
+    "@absolunet/ioc": "~2.2.0"
   }
 }
